@@ -124,7 +124,6 @@ PORT=3000
 
 
 
-📄 Conclusion (to include in README.md or a separate file)
+📄 Conclusion
 During development, I faced errors such as "Unknown column 'password'" (fixed by aligning code with password_hash column) and TypeError: Cannot read properties of undefined when req.user wasn’t set (solved by adding authentication middleware).
- I also learned how to simulate wrong password, missing token, tampered token, and expired token scenarios.
- Overall, I gained a better understanding of JWT authentication flows and how to handle errors gracefully in an Express API.
+I also learned how to simulate wrong password, missing token, tampered token, and expired token scenarios. Overall, I gained a better understanding of JWT authentication flows and how to handle errors gracefully in an Express API.
