@@ -8,12 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// health check
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
-// 👇 mounts /api/auth/*
 app.use("/api/auth", authRoutes);
 
 const PORT = process.env.SERVER_PORT || 3000;
